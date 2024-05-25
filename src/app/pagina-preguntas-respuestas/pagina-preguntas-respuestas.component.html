@@ -76,8 +76,8 @@
               <ul *ngIf="result.preguntasFalladas && result.preguntasFalladas.length > 0">
                 <li *ngFor="let pregunta of result.preguntasFalladas">
                   <strong>Pregunta:</strong> {{ pregunta.enunciado }}<br>
-                  <strong>Tu respuesta:</strong> {{ pregunta.respuestaUsuario }}<br>
-                  <strong>Respuesta correcta:</strong> {{ pregunta.respuestaCorrecta }}
+                  <strong>Tu respuesta:</strong> <p style="color: red;">{{ pregunta.respuestaUsuario }}</p>
+                  <strong>Respuesta correcta:</strong>  <p style="color: green;">{{ pregunta.respuestaCorrecta }} </p> 
                 </li>
               </ul>
               <p *ngIf="result.preguntasFalladas && result.preguntasFalladas.length === 0"><strong>¡Felicidades! ¡No ha
