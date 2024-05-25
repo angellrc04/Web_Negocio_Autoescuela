@@ -31,15 +31,15 @@
 
     <div class="topnav d-flex justify-content-between">
       <a class="active" routerLink="/PaginaInicioComponent" routerLinkActive="active"><img style="width: 60px"
-          src="https://cdn-icons-png.flaticon.com/512/1581/1581901.png" alt=""> Inicio</a>
+          src="../assets/img/MiLogo.png" alt=""> Inicio</a>
       <a routerLink="/PaginaHorarioPreciosComponent" routerLinkActive="active"><img style="width: 60px"
-          src="https://img.freepik.com/vector-premium/reloj-oficina-dinero_178888-93.jpg" alt=""> Horario y Precios</a>
+          src="../assets/img/horarioYPrecios.jpg" alt=""> Horario y Precios</a>
       <a routerLink="/PaginaConsejosComponent" routerLinkActive="active"><img style="width: 60px"
-          src="https://cdn-icons-png.flaticon.com/512/1979/1979238.png" alt="">Consejos</a>
+          src="../assets/img/consejosImagen.png" alt="">Consejos</a>
       <a routerLink="/PaginaPreguntasRespuestasComponent" routerLinkActive="active"><img style="width: 60px"
-          src="https://cdn-icons-png.flaticon.com/512/4403/4403531.png" alt="">Resultados</a>
+          src="../assets/img/imagenResultados.png" alt="">Resultados</a>
       <a routerLink="/PaginaSeleccionTestComponent" routerLinkActive="active"><img style="width: 60px"
-          src="https://vanacco.com/wp-content/uploads/2020/06/Form-1.jpg" alt=""> Tests</a>
+          src="../assets/img/Tests.jpg" alt=""> Tests</a>
 
       <div *ngIf="auth.isAuthenticated$ | async; else loggedOut" class="ml-auto">
         <button class="btn btn-primary btn-primary-outline-success mt-4" id="botonInicio"
