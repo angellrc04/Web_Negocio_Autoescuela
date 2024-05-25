@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Título de la página</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100"
+                  src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/Megane_2021.jpeg?tf=1200x"
+                  alt="First slide">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div *ngIf="authRedirect" class="alert alert-warning">
+            Debes iniciar sesión para acceder a los tests.
+          </div>
+          <h2 style="text-align: center; color: green;">Tipos de permisos</h2>
+          <div class="card-body">
+            <ol style="font-size: 15px; color: white;">
+              <li><b>AM (Ciclomotor)</b></li>
+              <li><b>A1 (Motocicletas hasta 125cc)</b></li>
+              <li><b>A2 (Motocicletas de hasta 35 Kw)</b></li>
+              <li><b>A (Todo tipo de motocicletas)</b></li>
+              <li><b>B (Turismo)</b></li>
+              <li><b>C1 (MMA entre 3.500 y 7.500)</b></li>
+              <li><b>C (Cualquier camión)</b></li>
+            </ol>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <img class="card-img-top"
+            src="http://autoescuelapro.com/blog/wp-content/uploads/2015/08/6-tips-para-conseguir-de-una-vez-la-L-este-verano_590x412.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

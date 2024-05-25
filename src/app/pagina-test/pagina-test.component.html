@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<body class="test-page-background" style="text-align: center">
+    <link rel="stylesheet" type="text/css" href="pagina-test.component.css">
+
+    <h1>Test Dificultad Fácil</h1>
+
+    <a><img style="width: 60px" src="https://cdn-icons-png.flaticon.com/512/1581/1581901.png"> </a>
+    <hr>
+
+    <form id="formularioTest" (submit)="enviarTest($event)">
+        <img src="../../assets/img/imagenTresSemaforos.jpeg" alt="">
+        <br>
+        <p>1.¿Cuál de las siguientes luces te obliga a detenerte?</p>
+        <input type="radio" id="a1" name="pregunta1" value="a1">
+        <label for="a1">Roja</label>
+        <br>
+        <input type="radio" id="b1" name="pregunta1" value="b1">
+        <label for="b1">Verde</label>
+        <br>
+        <input type="radio" id="c1" name="pregunta1" value="c1">
+        <label for="c1">Amarilla</label>
+        <br>
+        <br><br><br><br><br>
+
+        <img width="300px" src="../../assets/img/imagenTasa.jpg" alt="">
+        <br>
+        <p>2.¿Cuál es la tasa más segura de alcohol en aire para conducir?</p>
+        <input type="radio" id="a2" name="pregunta2" value="a2">
+        <label for="a2">0.0 mg/l</label>
+        <br>
+        <input type="radio" id="b2" name="pregunta2" value="b2">
+        <label for="b2">0.15 mg/l</label>
+        <br>
+        <input type="radio" id="c2" name="pregunta2" value="c2">
+        <label for="c2">0.30 mg/l</label>
+        <br>
+        <br><br><br><br><br>
+
+        <img width="300px" src="../../assets/img/imagenCiclistas.jpg" alt="">
+        <br>
+        <p>3.¿Cuál es la distancia mínima lateral que hay que dejar cuando rebase un ciclista?</p>
+        <input type="radio" id="a3" name="pregunta3" value="a3">
+        <label for="a3">2 metros</label>
+        <br>
+        <input type="radio" id="b3" name="pregunta3" value="b3">
+        <label for="b3">1.5 metros</label>
+        <br>
+        <input type="radio" id="c3" name="pregunta3" value="c3">
+        <label for="c3">1.25 metros</label>
+        <br>
+        <br><br><br><br><br>
+
+        <img width="300px" src="../../assets/img/imagenCarrilDerechoTermina.jpg" alt="">
+        <br>
+        <p>4.¿Qué me indica esta señal?</p>
+        <input type="radio" id="a4" name="pregunta4" value="a4">
+        <label for="a4">Que el carril derecho va a acabar</label>
+        <br>
+        <input type="radio" id="b4" name="pregunta4" value="b4">
+        <label for="b4">Que los dos carriles acaban</label>
+        <br>
+        <input type="radio" id="c4" name="pregunta4" value="c4">
+        <label for="c4">Que hay una salida por el carril derecho</label>
+        <br>
+        <br><br><br><br><br>
+
+        <img width="300px" src="../../assets/img/imagenInterseccionPrioridad.jpeg" alt="">
+        <br>
+        <p>5.¿Qué vehículo pasará en primer lugar?</p>
+        <input type="radio" id="a5" name="pregunta5" value="a5">
+        <label for="a5">Coche Blanco</label>
+        <br>
+        <input type="radio" id="b5" name="pregunta5" value="b5">
+        <label for="b5">Coche Rojo</label>
+        <br>
+        <input type="radio" id="c5" name="pregunta5" value="c5">
+        <label for="c5">Coche Azul</label>
+        <br>
+        <br><br><br><br><br>
+
+        <img width="300px" src="../../assets/img/señalSinCalzada.jpg" alt="">
+        <br>
+        <p>6.¿Qué significa esta señal?</p>
+        <input type="radio" id="a6" name="pregunta6" value="a6">
+        <label for="a6">Prohibido circular más adelante</label>
+        <br>
+        <input type="radio" id="b6" name="pregunta6" value="b6">
+        <label for="b6">Calzada sin salida</label>
+        <br>
+        <input type="radio" id="c6" name="pregunta6" value="c6">
+        <label for="c6">Puesto de emergencia</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 7 -->
+        <p>7.¿Qué es el ABS?</p>
+        <input type="radio" id="a7" name="pregunta7" value="a7">
+        <label for="a7">Sistema de frenos antibloqueo</label>
+        <br>
+        <input type="radio" id="b7" name="pregunta7" value="b7">
+        <label for="b7">Sistema de control de estabilidad</label>
+        <br>
+        <input type="radio" id="c7" name="pregunta7" value="c7">
+        <label for="c7">Sistema de tracción</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 8 -->
+        <p>8.¿Qué se debe hacer al aproximarse a un paso de peatones?</p>
+        <input type="radio" id="a8" name="pregunta8" value="a8">
+        <label for="a8">Reducir la velocidad y, si es necesario, detenerse para ceder el paso a los peatones</label>
+        <br>
+        <input type="radio" id="b8" name="pregunta8" value="b8">
+        <label for="b8">Aumentar la velocidad para cruzar rápidamente antes de que los peatones crucen</label>
+        <br>
+        <input type="radio" id="c8" name="pregunta8" value="c8">
+        <label for="c8">Ignorar el paso de peatones y continuar conduciendo sin cambios</label>
+        <br>
+        <br><br><br><br><br>
+        <!-- Pregunta 9 -->
+        <img width="300px" src="../../assets/img/imagenProhibidoAdelantar.png" alt="">
+        <br>
+        <p>9.¿Qué indica esta señal de tráfico?</p>
+        <input type="radio" id="a9" name="pregunta9" value="a9">
+        <label for="a9">Prohibición de adelantar</label>
+        <br>
+        <input type="radio" id="b9" name="pregunta9" value="b9">
+        <label for="b9">Inicio de una zona residencial</label>
+        <br>
+        <input type="radio" id="c9" name="pregunta9" value="c9">
+        <label for="c9">Cruce de animales salvajes</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 10 (alternativa) -->
+        <p>10. ¿Que permiso es necesario para poder conducir un turismo?</p>
+        <input type="radio" id="a10" name="pregunta10" value="a10">
+        <label for="a10">A</label>
+        <br>
+        <input type="radio" id="b10" name="pregunta10" value="b10">
+        <label for="b10">A3</label>
+        <br>
+        <input type="radio" id="c10" name="pregunta10" value="c10">
+        <label for="c10">B</label>
+        <br>
+        <br><br><br><br><br>
+
+
+        <br>
+        <button type="submit" class="btn btn-primary btn-block m-4" id="botonEnviarTest">Enviar Test</button>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<body class="test-page-background" style="text-align: center">
+    <link rel="stylesheet" type="text/css" href="pagina-test-medio.component.css">
+
+    <h1>Test Dificultad Media</h1>
+
+    <a><img style="width: 60px" src="https://cdn-icons-png.flaticon.com/512/1581/1581901.png"> </a>
+    <hr>
+
+    <form id="formularioTest" (submit)="enviarTest($event)">
+        <!-- Pregunta 1 -->
+        <img width="300px" src="../../assets/img/SeñalCiervo.jpg" alt="">
+        <p>1.¿Qué significa una señal triangular con un borde rojo y una figura de ciervo en el centro?</p>
+        <input type="radio" id="a11" name="pregunta1" value="a11">
+        <label for="a1">Peligro por animales en la vía</label>
+        <br>
+        <input type="radio" id="b11" name="pregunta1" value="b11">
+        <label for="b1">Prohibido el paso de vehículos motorizados</label>
+        <br>
+        <input type="radio" id="c11" name="pregunta1" value="c11">
+        <label for="c1">Zona de caza autorizada</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 2 -->
+        <img width="300px" src="../../assets/img/CocheDerrapando.jpg" alt="">
+        <br>
+        <p>2.¿Qué debes hacer si tu coche comienza a derrapar en una curva?</p>
+        <input type="radio" id="a12" name="pregunta2" value="a12">
+        <label for="a12">Girar el volante en la dirección del derrape</label>
+        <br>
+        <input type="radio" id="b12" name="pregunta2" value="b12">
+        <label for="b12">Frenar fuertemente</label>
+        <br>
+        <input type="radio" id="c12" name="pregunta2" value="c12">
+        <label for="c12">Girar el volante en la dirección opuesta al derrape</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 3 -->
+        <img width="300px" src="../../assets/img/amarilloIntermitente.png" alt="">
+        <br>
+        <p>3.¿Qué significa una luz amarilla intermitente en un semáforo?</p>
+        <input type="radio" id="a13" name="pregunta3" value="a13">
+        <label for="a13">Detenerse completamente</label>
+        <br>
+        <input type="radio" id="b13" name="pregunta3" value="b13">
+        <label for="b13">Proceder con precaución</label>
+        <br>
+        <input type="radio" id="c13" name="pregunta3" value="c13">
+        <label for="c13">Pasar rápidamente</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 4 -->
+        <img width="300px" src="../../assets/img/Adelantando.jpg" alt="">
+        <br>
+        <p>4.¿Cuál es la forma correcta de adelantar a otro vehículo en carretera?</p>
+        <input type="radio" id="a14" name="pregunta4" value="a14">
+        <label for="a14">Adelantar por la derecha</label>
+        <br>
+        <input type="radio" id="b14" name="pregunta4" value="b14">
+        <label for="b14">Adelantar por la izquierda</label>
+        <br>
+        <input type="radio" id="c14" name="pregunta4" value="c14">
+        <label for="c14">Adelantar por cualquier lado</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 5 -->
+        <img width="300px" src="../../assets/img/DiscontinuaAmarilla.jpg" alt="">
+        <br>
+        <p>5.¿Qué indica una línea amarilla discontinua en el borde de la calzada?</p>
+        <input type="radio" id="a15" name="pregunta5" value="a15">
+        <label for="a15">Prohibición de estacionar</label>
+        <br>
+        <input type="radio" id="b15" name="pregunta5" value="b15">
+        <label for="b15">Prohibición de detenerse</label>
+        <br>
+        <input type="radio" id="c15" name="pregunta5" value="c15">
+        <label for="c15">Zona de carga y descarga</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 6 -->
+        <img width="300px" src="../../assets/img/señalStop.jpeg" alt="">
+        <br>
+        <p>6.¿Cómo se debe reaccionar ante una señal de STOP?</p>
+        <input type="radio" id="a16" name="pregunta6" value="a16">
+        <label for="a16">Reducir la velocidad y, si no hay vehículos, continuar</label>
+        <br>
+        <input type="radio" id="b16" name="pregunta6" value="b16">
+        <label for="b16">Detenerse completamente y ceder el paso</label>
+        <br>
+        <input type="radio" id="c16" name="pregunta6" value="c16">
+        <label for="c16">Tocar la bocina y continuar</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 7 -->
+        <img width="300px" src="../../assets/img/distanciaSeguridad.jpeg" alt="">
+        <br>
+        <p>7.¿Cuál es la distancia de seguridad mínima recomendada entre vehículos en una carretera?</p>
+        <input type="radio" id="a17" name="pregunta7" value="a17">
+        <label for="a17">Un metro</label>
+        <br>
+        <input type="radio" id="b17" name="pregunta7" value="b17">
+        <label for="b17">La distancia que se recorre en dos segundos</label>
+        <br>
+        <input type="radio" id="c17" name="pregunta7" value="c17">
+        <label for="c17">Cinco metros</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 8 -->
+        <img width="300px" src="../../assets/img/señal50.jpg" alt="">
+        <p>8.¿Qué significa una señal de límite de velocidad con el número 50?</p>
+        <input type="radio" id="a18" name="pregunta8" value="a18">
+        <label for="a18">La velocidad mínima permitida es 50 km/h</label>
+        <br>
+        <input type="radio" id="b18" name="pregunta8" value="b18">
+        <label for="b18">La velocidad máxima permitida es 50 km/h</label>
+        <br>
+        <input type="radio" id="c18" name="pregunta8" value="c18">
+        <label for="c18">La velocidad recomendada es 50 km/h</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 9 -->
+        <img width="300px" src="../../assets/img/interseccionSinSeña.jpg" alt="">
+        <br>
+        <p>9.¿Qué debes hacer si te acercas a una intersección sin señales y hay otro vehículo a tu derecha?</p>
+        <input type="radio" id="a19" name="pregunta9" value="a19">
+        <label for="a19">Ceder el paso al vehículo a tu derecha</label>
+        <br>
+        <input type="radio" id="b19" name="pregunta9" value="b19">
+        <label for="b19">Continuar, ya que tienes la preferencia</label>
+        <br>
+        <input type="radio" id="c19" name="pregunta9" value="c19">
+        <label for="c19">Tocar la bocina y acelerar</label>
+        <br>
+        <br><br><br><br><br>
+
+        <!-- Pregunta 10 -->
+        <img width="300px" src="../../assets/img/cocheLluvia.jpg" alt="">
+        <br>
+        <p>10. ¿Qué es el aquaplaning?</p>
+        <input type="radio" id="a20" name="pregunta10" value="a20">
+        <label for="a20">Una técnica de conducción eficiente</label><br>
+        <input type="radio" id="b20" name="pregunta10" value="b20">
+        <label for="b20">El fenómeno que ocurre cuando un vehículo pierde tracción debido a una capa de agua entre los
+            neumáticos y la carretera</label><br>
+        <input type="radio" id="c20" name="pregunta10" value="c20">
+        <label for="20">Un sistema de frenado avanzado</label><br>
+        <input type="radio" id="d20" name="pregunta10" value="d20">
+        <label for="20">Un tipo de neumático especial para lluvia</label><br>
+
+        <br>
+        <button type="submit" class="btn btn-primary btn-block m-4" id="botonEnviarTest">Enviar Test</button>
+
+    </form>
+</body>
+
+</html>

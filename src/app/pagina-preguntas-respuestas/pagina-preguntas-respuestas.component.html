@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* Estilos existentes */
+    .container {
+      max-width: 1400px;
+      margin: auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form {
+      margin-bottom: 20px;
+    }
+
+    /* Añadir estilos para resultados de test */
+    .test-results {
+      margin-top: 20px;
+    }
+
+    .test-result {
+      background-color: #333;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .test-result-text {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .loading-text {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card"></div>
+        <div class="fakeimg" style="height:auto;">
+          <h2><u>Información que los usuarios pueden proporcionar para ayudar</u></h2>
+          <p>El confinamiento ha dado margen a los alumnos de autoescuelas para prepararse de cara al examen teórico de
+            la DGT, mientras que la parte práctica comenzó su andadura con la Fase 2. En la parte teórica, y
+            aprovechando
+            los registros de las pruebas online realizadas por los alumnos, el departamento de Formación de PONS
+            Seguridad
+            Vial ha elaborado un listado con las preguntas más falladas en su plataforma, con el ánimo de ayudar a
+            quienes
+            estén preparándose actualmente para superar el examen de la DGT.</p>
+          <br>
+          <!-- Aquí se mostrarán los resultados del test -->
+          <div *ngIf="testResults$ | async as testResults; else loading" class="test-results">
+            <div *ngFor="let result of testResults" class="test-result">
+              <h3 style="color: cadetblue;">Test enviado en la fecha:</h3>
+              <h2>Tipo de test: </h2>
+              <p class="test-result-text"
+                [ngStyle]="{'color': result.testType === 'facil' ? 'green' : result.testType === 'medio' ? 'orange' : 'red'}">
+                {{ result.testType}}</p>
+              <p class="test-result-text">{{ result.date }}</p>
+              <h3>Con una puntuación total de:</h3>
+              <h3 [ngStyle]="{'color': result.score < 5 ? 'red' : 'green'}" class="test-result-text">{{ result.score }}
+                puntos</h3>
+              <p *ngIf="result.preguntasFalladas && result.preguntasFalladas.length > 0">Las preguntas que ha fallado
+                son:</p>
+              <ul *ngIf="result.preguntasFalladas && result.preguntasFalladas.length > 0">
+                <li *ngFor="let pregunta of result.preguntasFalladas">
+                  <strong>Pregunta:</strong> {{ pregunta.enunciado }}<br>
+                  <strong>Tu respuesta:</strong> {{ pregunta.respuestaUsuario }}<br>
+                  <strong>Respuesta correcta:</strong> {{ pregunta.respuestaCorrecta }}
+                </li>
+              </ul>
+              <p *ngIf="result.preguntasFalladas && result.preguntasFalladas.length === 0"><strong>¡Felicidades! ¡No ha
+                  fallado ninguna pregunta!</strong></p>
+            </div>
+          </div>
+
+          <!-- Mensaje de carga -->
+          <ng-template #loading>
+            <p class="loading-text">Cargando resultados...</p>
+          </ng-template>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <!-- Imágenes existentes -->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
