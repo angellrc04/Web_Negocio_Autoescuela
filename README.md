@@ -18,7 +18,7 @@ Sigue los pasos de la instalación de Node.
 
 ## Instalar angular
 
-npm i @angular/material@16.2.14
+npm install -g @angular/cli@16.2.14
 
 ## Instalar dexie
 
