@@ -28,6 +28,10 @@ npm install dexie
 
 Ejecuta `ng serve` para un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias cualquiera de los archivos fuente.
 
+## Url de la pagina desplegada
+
+https://webnegocioautoescuela.netlify.app/
+
 ## Generación de código
 
 Ejecuta `ng generate component nombre-componente` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
