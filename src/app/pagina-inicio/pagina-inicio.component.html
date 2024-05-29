@@ -11,17 +11,15 @@
     <div class="row">
       <div class="col-md-8">
         <div class="card">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100"
-                  src="../../assets/img/imagenMegane.jpg"
-                  alt="First slide">
-              </div>
+          <img class="d-block w-100" src="../../assets/img/imagenMegane.jpg" alt="First slide">
+        </div>
 
-            </div>
+        <div class="card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.385059114367!2d-5.086509954530465!3d37.54599078135888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12ca94787e76e9%3A0xd7299f07e1ee34fc!2sC.%20Nueva%2C%2041400%20%C3%89cija%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1716982731073!5m2!1ses!2ses"
+            width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-          </div>
         </div>
       </div>
       <div class="col-md-4">
@@ -29,9 +27,20 @@
           <div *ngIf="authRedirect" class="alert alert-warning">
             Debes iniciar sesión para acceder a los tests.
           </div>
+          <h2 style="text-align: center; color: green;">¡Bienvenidos a trasvolante!</h2>
+          <div class="card-body">
+            <p>Estamos comprometidos a brindarte una formación de calidad para que obtengas tu licencia de conducir de
+              manera rápida, segura y eficiente. Con años de experiencia y un equipo de instructores altamente
+              calificados, estamos aquí para ayudarte a dominar el arte de conducir.</p>>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <img class="card-img-top" src="../../assets/img/imagenL.jpg" alt="Card image cap">
+        </div>
+        <div class="card" style="height: 390px;">
           <h2 style="text-align: center; color: green;">Tipos de permisos</h2>
           <div class="card-body">
-            <ol style="font-size: 15px; color: white;">
+            <ol style="font-size: 20px; color: white;">
               <li><b>AM (Ciclomotor)</b></li>
               <li><b>A1 (Motocicletas hasta 125cc)</b></li>
               <li><b>A2 (Motocicletas de hasta 35 Kw)</b></li>
@@ -41,11 +50,6 @@
               <li><b>C (Cualquier camión)</b></li>
             </ol>
           </div>
-        </div>
-        <div class="card mt-4">
-          <img class="card-img-top"
-            src="../../assets/img/imagenL.jpg"
-            alt="Card image cap">
         </div>
       </div>
     </div>
