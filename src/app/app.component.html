@@ -20,75 +20,71 @@
 <body>
   <div class="container">
     <link rel="stylesheet" type="text/css" href="../styles.css">
-    <div class="header">
+    <div class="header text-center my-4">
       <h1>Trasvolante</h1>
-      <img style width="150px" src="../assets/img/MiLogo.png" alt="">
+      <img class="img-fluid" src="../assets/img/MiLogo.png" alt="Logo" style="width: 150px;">
       <div *ngIf="auth.user$ | async as user">
         <h2>¡Bienvenido!</h2>
         <p>{{ user.email }}</p>
       </div>
     </div>
 
-    <div class="topnav d-flex justify-content-between">
-      <a class="active" routerLink="/PaginaInicioComponent" routerLinkActive="active"><img style="width: 60px"
-          src="../assets/img/MiLogo.png" alt=""> Inicio</a>
-      <a routerLink="/PaginaHorarioPreciosComponent" routerLinkActive="active"><img style="width: 60px"
-          src="../assets/img/horarioYPrecios.jpg" alt=""> Horario y Precios</a>
-      <a routerLink="/PaginaConsejosComponent" routerLinkActive="active"><img style="width: 60px"
-          src="../assets/img/consejosImagen.png" alt="">Consejos</a>
-      <a routerLink="/PaginaPreguntasRespuestasComponent" routerLinkActive="active"><img style="width: 60px"
-          src="../assets/img/imagenResultados.png" alt="">Resultados</a>
-      <a routerLink="/PaginaSeleccionTestComponent" routerLinkActive="active"><img style="width: 60px"
-          src="../assets/img/Tests.jpg" alt=""> Tests</a>
+    <div class="topnav d-flex flex-wrap justify-content-between">
+      <a class="active d-flex align-items-center" routerLink="/PaginaInicioComponent" routerLinkActive="active">
+        <img class="img-fluid" src="../assets/img/MiLogo.png" alt="Inicio" style="width: 60px;"> Inicio</a>
+      <a class="d-flex align-items-center" routerLink="/PaginaHorarioPreciosComponent" routerLinkActive="active">
+        <img class="img-fluid" src="../assets/img/horarioYPrecios.jpg" alt="Horario y Precios" style="width: 60px;"> Horario y Precios</a>
+      <a class="d-flex align-items-center" routerLink="/PaginaConsejosComponent" routerLinkActive="active">
+        <img class="img-fluid" src="../assets/img/consejosImagen.png" alt="Consejos" style="width: 60px;"> Consejos</a>
+      <a class="d-flex align-items-center" routerLink="/PaginaPreguntasRespuestasComponent" routerLinkActive="active">
+        <img class="img-fluid" src="../assets/img/imagenResultados.png" alt="Resultados" style="width: 60px;"> Resultados</a>
+      <a class="d-flex align-items-center" routerLink="/PaginaSeleccionTestComponent" routerLinkActive="active">
+        <img class="img-fluid" src="../assets/img/Tests.jpg" alt="Tests" style="width: 60px;"> Tests</a>
 
-      <div *ngIf="auth.isAuthenticated$ | async; else loggedOut" class="ml-auto">
-        <button class="btn btn-primary btn-primary-outline-success mt-4" id="botonInicio"
-          style="height: 40px; margin-right: 20px;" (click)="logOut()">
-          Cerrar Sesión
-        </button>
+      <div class="ml-auto mt-2 mt-lg-0">
+        <div *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+          <button class="btn btn-primary btn-primary-outline-success" id="botonInicio" style="height: 40px; margin-right: 20px;" (click)="logOut()">
+            Cerrar Sesión
+          </button>
+        </div>
+        <ng-template #loggedOut>
+          <button class="btn btn-primary btn-primary-outline-success" id="botonInicio" style="height: 40px; margin-right: 20px;" (click)="login()">
+            Iniciar Sesión
+          </button>
+        </ng-template>
       </div>
-
-      <ng-template #loggedOut>
-        <button class="btn btn-primary btn-primary-outline-success mt-4 mr-2" id="botonInicio"
-          style="height: 40px;margin-right: 20px;" (click)="login()">Iniciar Sesión</button>
-      </ng-template>
-
-
     </div>
-
 
     <router-outlet></router-outlet>
 
     <div class="footer">
-      <footer style="background-color: #161616; color: #fff; padding: 50px 20px;">
+      <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <h2 style="color: green;">Contacto</h2>
+            <div class="col-md-4 mb-3 mb-md-0">
+              <h2 class="text-success">Contacto</h2>
               <p>Estamos ubicados en <br> Dirección: Calle nueva, Número 56 <br> Écija, Sevilla</p>
               <p>Teléfono: +921382314 <br> Email: infotrasvolante@gmail.com</p>
             </div>
-            <div class="col-md-4">
-              <h2 style="color: green;">Horario de atención</h2>
+            <div class="col-md-4 mb-3 mb-md-0">
+              <h2 class="text-success">Horario de atención</h2>
               <p>Lunes a Viernes: 9:00am - 6:00pm <br> Sábados: 9:00am - 2:00pm <br> Domingos: Cerrado</p>
             </div>
             <div class="col-md-4">
-              <h2 style="color: green;">Síguenos</h2>
+              <h2 class="text-success">Síguenos</h2>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" style="color: #fff;"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#" style="color: #fff;"><i class="fab fa-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="#" style="color: #fff;"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
           <hr style="border-color: #666;">
-          <p class="text-center">&copy; 2024 Trasvolante - Todos los derechos reservados</p>
+          <p class="text-center mb-0">&copy; 2024 Trasvolante - Todos los derechos reservados</p>
         </div>
       </footer>
     </div>
-
   </div>
 </body>
-
 
 </html>

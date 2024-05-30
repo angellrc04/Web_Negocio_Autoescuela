@@ -2,67 +2,86 @@
 <html>
 
 <head>
-    <title>Título de la página</title>
-    <link rel="stylesheet" type="text/css" href="../../styles.css">
-    <style>
-        .container {
-            padding: 20px; /* Añade espacio alrededor del contenido */
-        }
+  <title>Título de la página</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    .container {
+      padding: 20px;
+    }
 
-        .card {
-            margin-bottom: 20px; /* Añade espacio entre las cards */
-            border: none; /* Elimina el borde de las cards */
-        }
+    .card {
+      margin-bottom: 20px;
+      border: none;
+    }
 
-        .fakeimg img {
-            width: 100%; /* Haz que la imagen ocupe todo el ancho del contenedor */
-            height: auto; /* Ajusta automáticamente la altura según el ancho */
-        }
+    .fakeimg img {
+      width: 100%;
+      height: auto;
+    }
 
-        .rightcolumn {
-            padding-left: 20px; /* Añade espacio a la izquierda del contenido de la columna derecha */
-        }
+    .rightcolumn {
+      padding-left: 20px;
+    }
 
-        .card1 {
-            background-color: #333; /* Cambia el color de fondo de las cards */
-            padding: 20px; /* Añade espacio interno a las cards */
-            border-radius: 10px; /* Añade bordes redondeados a las cards */
-        }
+    .card1 {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-        .card1 ul {
-            list-style-type: none; /* Elimina los puntos de la lista */
-            padding-left: 0; /* Elimina el espacio de relleno izquierdo de la lista */
-        }
+    .card1 ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
 
-        .card1 ul li {
-            margin-bottom: 10px; /* Añade espacio entre los elementos de la lista */
-        }
-    </style>
+    .card1 ul li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .rightcolumn {
+        padding-left: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="leftcolumn">
-                <div class="card">
-                    <div class="fakeimg" style="height: 710px;"><img src="../../assets/img/Horario.jpg" alt="Horario"></div>
-                </div>
-            </div>
-            <div class="rightcolumn">
-                <div class="card1">
-                    <h2 style="text-align: center; color: white;">Precio sobre las clases y exámenes</h2>
-                    <div class="card1" style="width: 200px;">
-                        <ul style="font-size: 15px; color: white;">
-                            <li><b>El libro para el examen teórico costará 50 euros el libro.</b></li>
-                            <li><b>Hacer el examen teórico cuesta 200 euros (tenemos dos intentos).</b></li>
-                            <li><b>Hacer el examen práctico cuesta 250 euros.</b></li>
-                            <li><b>(El precio será el mismo para cualquier tipo de permiso).</b></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mb-4">
+        <div class="card">
+          <div class="fakeimg">
+            <img src="../../assets/img/Horario.jpg" alt="Horario">
+          </div>
         </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card1">
+          <h2 class="text-center text-white">Precio sobre las clases y exámenes</h2>
+          <div class="card1" style="width: auto;">
+            <ul style="font-size: 15px; color: white;">
+              <li><b>El libro para el examen teórico costará 50 euros el libro.</b></li>
+              <li><b>Hacer el examen teórico cuesta 200 euros (tenemos dos intentos).</b></li>
+              <li><b>Hacer el examen práctico cuesta 250 euros.</b></li>
+              <li><b>(El precio será el mismo para cualquier tipo de permiso).</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
