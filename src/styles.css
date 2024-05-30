@@ -10,7 +10,8 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background-image: url("./assets/img/fondoauto.jpg");
+  background: rgb(31,31,31);
+  background: linear-gradient(90deg, rgba(31,31,31,1) 4%, rgba(98,98,98,1) 51%, rgba(28,28,28,1) 96%);
 }
 
 .header {
